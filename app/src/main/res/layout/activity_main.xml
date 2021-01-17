@@ -43,6 +43,14 @@
         tools:ignore="HardcodedText"
         android:textAllCaps="false"/>
 
+    <Button
+        android:id="@+id/fragment_button"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Fragment"
+        tools:ignore="HardcodedText"
+        android:textAllCaps="false"/>
+
     <EditText
         android:id="@+id/edit_text"
         android:layout_width="match_parent"

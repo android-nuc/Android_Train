@@ -19,7 +19,7 @@ import android.widget.Toast;
  */
 public class MainActivity extends AppCompatActivity implements View.OnClickListener {
 
-    private Button button, recycleButton, listButton;
+    private Button button, recycleButton, listButton, fragmentButton;
     private EditText editText;
     private ProgressBar progressBar;
 
@@ -35,6 +35,9 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
 
         listButton = findViewById(R.id.list_button);
         listButton.setOnClickListener(this);
+
+        fragmentButton = findViewById(R.id.fragment_button);
+        fragmentButton.setOnClickListener(this);
 
         editText = findViewById(R.id.edit_text);
         progressBar = findViewById(R.id.progress_bar);
@@ -82,6 +85,10 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
                 Intent intent1 = new Intent(MainActivity.this, FruitListActivity.class);
                 startActivity(intent1);
                 finish();
+                break;
+            case R.id.fragment_button:
+                Intent intent2 = new Intent(MainActivity.this, FragmentActivity.class);
+                startActivity(intent2);
                 break;
         }
     }
