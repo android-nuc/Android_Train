@@ -27,6 +27,14 @@
         android:textAllCaps="false"
         tools:ignore="HardcodedText" />
 
+    <Button
+        android:id="@+id/recycle_button"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="RecycleButton"
+        tools:ignore="HardcodedText"
+        android:textAllCaps="false"/>
+
     <EditText
         android:id="@+id/edit_text"
         android:layout_width="match_parent"

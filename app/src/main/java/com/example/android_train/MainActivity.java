@@ -5,6 +5,7 @@ import androidx.appcompat.app.AppCompatActivity;
 
 import android.app.ProgressDialog;
 import android.content.DialogInterface;
+import android.content.Intent;
 import android.os.Bundle;
 import android.util.Log;
 import android.view.View;
@@ -18,7 +19,7 @@ import android.widget.Toast;
  */
 public class MainActivity extends AppCompatActivity implements View.OnClickListener {
 
-    private Button button;
+    private Button button, recycleButton;
     private EditText editText;
     private ProgressBar progressBar;
 
@@ -28,6 +29,9 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
         setContentView(R.layout.activity_main);
         button = (Button) findViewById(R.id.button);
         button.setOnClickListener(this);
+
+        recycleButton = findViewById(R.id.recycle_button);
+        recycleButton.setOnClickListener(this);
 
         editText = findViewById(R.id.edit_text);
         progressBar = findViewById(R.id.progress_bar);
@@ -66,6 +70,10 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
 //                progressDialog.setMessage("内容");
 //                progressDialog.setTitle("标题");
 //                progressDialog.show();
+                break;
+            case R.id.recycle_button:
+                Intent intent = new Intent(MainActivity.this, FruitRecycleActivity.class);
+                startActivity(intent);
                 break;
         }
     }
