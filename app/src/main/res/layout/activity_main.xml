@@ -28,6 +28,14 @@
         tools:ignore="HardcodedText" />
 
     <Button
+        android:id="@+id/list_button"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="ListButton"
+        tools:ignore="HardcodedText"
+        android:textAllCaps="false"/>
+
+    <Button
         android:id="@+id/recycle_button"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
